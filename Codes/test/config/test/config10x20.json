@@ -1,0 +1,31 @@
+{
+    "pretrainnednet" : [
+
+     ],
+    "indivconfig":["config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json","config10x20_1.json"],
+    "numberofchannels":[6,6,6,6,6,6,6,6,6,6],
+    "valuationtype":"additive",
+    "valuationDistribution":"Uniform",
+    "items":"good",
+    "listnames" : [],
+    "num_test_batches":1,
+    "temperature": 111111,
+    "softmax":0,
+    "valuesmul" : 0,
+    "values":[  [0.069],[0.079] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.099] , [1],  [1.009], [1.019],[1.029],[1.039],[1.049]],
+    "compareMMS":1,
+    "num_agents" : 8,
+    "num_items"  : 50,
+    "lossfunctionId":3,
+    "net"        : {
+        "convlayerunits" : [6,8,16,32,64],
+        "convkernelsize":[3,3,3,3],
+        "convactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh"],
+        "deconvlayerunits" : [64,32,16,8,6],
+        "deconvkernelsize":[3,3,3,3],
+        "deconvactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh"],
+        "skippedconnection":[0,0,0,0,0]
+    } 
+}
+
+

@@ -1,0 +1,52 @@
+{
+    "txt":"2D dim input 9 lac",
+    "valuationtype":"additive",
+    "valuationDistribution":"Uniform",
+    "items":"all",
+    "temperature": 11111,
+    "softmax":0,
+    "valuesmul" : 0,
+    "loss":0,
+    "optim":0,
+    "num_agents" : 10,
+    "num_items"  : 20,
+    "batch_size" : 256,
+    "num_batches": 1200,
+    "num_samples": 307200,
+    "lossfunctionId":4,
+    "numberofchannels":1,
+    "values":[  [0.069],[0.079] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.099] , [1],  [1.009], [1.019],[1.029],[1.039],[1.049]],
+    "net"        : {
+        "convlayerunits" : [6,16,32,64],
+        "convkernelsize":[3,3,3,3],
+        "convactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh"],
+        "deconvlayerunits" : [64,32,16,6],
+        "deconvkernelsize":[3,3,3,3],
+        "deconvactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh","tanh","tanh"],
+        "skippedconnection":[0,0,0,0,0,0,0,0,0]
+        } ,
+    "train"     : {
+        "dropout":0,
+        "dropoutratehidden":0.8,
+        "dropoutratevisible":1,
+        "seed"     : 42,
+        "max_iter" : 20001,
+        "lr"       : 1e-3,
+        "print_iter" : 128,
+        "step_size" : 1000001,
+        "resetlr" : 249000,
+        "gamma" : 0.1, 
+        "scheduler": 0,
+        "equalAllocation": 1,
+        "reloadbestmodel" : 4222222225000,
+        "lambda_init_val" : 2,
+        "lambda_update_freq" : 25555550000,
+        "pho":1.0,
+        "pho_add" : 50.0,
+        "pho_update_freq" : 44,
+        "fastAbsoluteLoss" : 1,
+        "basicmulfactor" : 9
+    }
+  }
+
+

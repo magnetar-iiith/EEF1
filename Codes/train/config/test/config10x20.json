@@ -1,0 +1,29 @@
+{
+    "pretrainnednet" : [
+        "EFNN7_config10x20_1.json_0506EEF1-NN-5-5.pth"    ],
+    "valuationtype":"additive",
+    "valuationDistribution":"Uniform",
+    "items":"good",
+    "listnames" : [],
+    "num_test_batches":1,
+    "temperature": 1111,
+    "softmax":0,
+    "valuesmul" : 0,
+    "numberofchannels":2,
+    "values":[  [0.069],[0.079] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.099] , [1],  [1.009], [1.019],[1.029],[1.039],[1.049]],
+    "compareMMS":1,
+    "num_agents" : 10,
+    "num_items"  : 20,
+    "lossfunctionId":3,
+    "net"        : {
+        "convlayerunits" : [2,8,16,32,64],
+        "convkernelsize":[3,3,3,3],
+        "convactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh"],
+        "deconvlayerunits" : [64,32,16,8,2],
+        "deconvkernelsize":[3,3,3,3],
+        "deconvactivation" : ["tanh","tanh","tanh","tanh","tanh","tanh"],
+        "skippedconnection":[0,0,0,0,0]
+    } 
+}
+
+

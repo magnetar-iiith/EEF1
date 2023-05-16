@@ -1,0 +1,46 @@
+{
+    "valuationtype":"additive",
+    "valuationDistribution":"Uniform",
+    "items":"all",
+    "temperature": 111,
+    "softmax":1,
+    "valuesmul" : 0,
+    "loss":0,
+    "optim":0,
+    "num_agents" : 10,
+    "num_items"  : 20,
+    "batch_size" : 256,
+    "num_batches": 630,
+    "num_samples": 161280,
+    "lossfunctionId":3,
+    "values":[  [0.069],[0.079] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.089] ,[0.099] , [1],  [1.009], [1.019],[1.029],[1.039],[1.049]],
+    "net"        : {
+        "convlayerunits" : [1,8,16,32,64,128],
+        "convkernelsize":[3,3,3,3,2],
+        "convactivation" : ["relu","relu","relu","relu","relu","relu"],
+        "deconvlayerunits" : [128,64,32,16,8,1],
+        "deconvkernelsize":[2,3,3,3,3],
+        "deconvactivation" : ["relu","relu","relu","relu","relu","relu"],
+        "skippedconnection":[0,0,0,0,0]
+        } ,
+    "train"     : {
+        "seed"     : 42,
+        "max_iter" : 300001,
+        "lr"       : 1e-3,
+        "print_iter" : 128,
+        "step_size" : 100000,
+        "gamma" : 0.1,
+        "scheduler": 1,
+        "equalAllocation": 1,
+        "reloadbestmodel" : 4222222225000,
+        "lambda_init_val" : 5,
+        "lambda_update_freq" : 25555550000,
+        "pho":1.0,
+        "pho_add" : 50.0,
+        "pho_update_freq" : 44,
+        "fastAbsoluteLoss" : 1,
+        "basicmulfactor" : 9
+    }
+  }
+
+
