@@ -1,6 +1,6 @@
 # EEF1
 
-Kindly run "run_list" in Codes/Train
+Run "run_list" in Codes/Train
 and in that edit the line as follows : python mainrun.py NeuralNetworkName ConfigurationName ModelName Reload/NoReload
 
 ## Reload is used when you want to reload an existing model and retrain it
